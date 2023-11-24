@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>A4 Paper</title>
+    <link rel="stylesheet" href="fpk.css" />
+    <style>
+      :root {
+        --bleeding: 0.5cm;
+        --margin: 1cm;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0 auto;
+        padding: 0;
+        background: rgb(204, 204, 204);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .page {
+        display: inline-block;
+        position: relative;
+        height: 297mm;
+        width: 210mm;
+        font-size: 12pt;
+        margin: 2em auto;
+        padding: calc(var(--bleeding) + var(--margin));
+        box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+        background-size: cover;
+      }
+
+      .page-spk {
+        background-image: url("./template-spk.jpg");
+      }
+
+      @media screen {
+        .page::after {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          width: calc(100% - var(--bleeding) * 2);
+          height: calc(100% - var(--bleeding) * 2);
+          margin: var(--bleeding);
+          pointer-events: none;
+          z-index: 9999;
+        }
+      }
+
+      @media print {
+        .page {
+          margin: 0;
+          background-image: none;
+          overflow: hidden;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="--bleeding: 0.5cm; --margin: 1cm">
+    <div class="page page-spk">
+      <!-- NOMOR CIF -->
+      <p id="nomor_cif" class="styled">1012</p>
+
+      <!-- IDENTITAS YANG DIPAKAI -->
+      <input
+        type="checkbox"
+        class="styled"
+        id="identitas_yang_dipakai_ktp"
+        name="vehicle1"
+        value="ktp"
+        checked="true"
+      />
+
+      <input
+        type="checkbox"
+        class="styled"
+        id="identitas_yang_dipakai_passpor"
+        name="vehicle1"
+        value="passpor"
+        checked="true"
+      />
+
+      <input
+        type="checkbox"
+        class="styled"
+        id="identitas_yang_dipakai_sim"
+        name="vehicle1"
+        value="sim"
+        checked="true"
+      />
+
+      <!-- Nomor KTP/ SIM/ PASSWORD -->
+      <p id="nomor_identitas" class="styled">314407000000001</p>
+
+      <!-- Nama Lengkap -->
+      <p id="nama_lengkap" class="styled">Haryanto Sukamto</p>
+
+      <!-- Alamat -->
+      <p id="alamat" class="styled">Jl Setiabudi timur</p>
+
+      <!-- Asal Barang ==== -->
+      <input
+        type="checkbox"
+        class="styled"
+        id="asal_barang_hasil_usaha"
+        name="vehicle1"
+        checked="true"
+      />
+
+      <input
+        type="checkbox"
+        class="styled"
+        id="asal_barang_hasil_investasi"
+        checked="true"
+      />
+
+      <input
+        type="checkbox"
+        class="styled"
+        id="asal_barang_hasil_warisan"
+        checked="true"
+      />
+
+      <input
+        type="checkbox"
+        class="styled"
+        id="asal_barang_hasil_lain"
+        checked="true"
+      />
+
+      <input
+        type="checkbox"
+        class="styled"
+        id="asal_barang_hasil_hibah"
+        checked="true"
+      />
+      <!-- Asal Barang ==== -->
+
+      <!-- Status Transaksi === -->
+      <input
+        type="checkbox"
+        class="styled"
+        id="status_transaksi_sendiri"
+        checked="true"
+      />
+
+      <input
+        type="checkbox"
+        class="styled"
+        id="status_transaksi_orang_lain"
+        checked="true"
+      />
+      <!-- Status Transaksi === -->
+
+      <!-- Tujuan Transaksi ==== -->
+      <input
+        type="checkbox"
+        class="styled"
+        id="tujuan_transaksi_pembelian"
+        checked="true"
+      />
+      <input
+        type="checkbox"
+        class="styled"
+        id="tujuan_transaksi_modal"
+        checked="true"
+      />
+      <input
+        type="checkbox"
+        class="styled"
+        id="tujuan_transaksi_pendidikan"
+        checked="true"
+      />
+      <input
+        type="checkbox"
+        class="styled"
+        id="tujuan_transaksi_lain"
+        checked="true"
+      />
+      <!-- Tujuan Transaksi ==== -->
+
+      <!-- Instrumen pembayaran ===== -->
+      <input
+        type="checkbox"
+        class="styled"
+        id="instrumen_pembayaran_tunai"
+        checked="true"
+      />
+      <input
+        type="checkbox"
+        class="styled"
+        id="instrumen_pembayaran_bank"
+        checked="true"
+      />
+      <!-- Instrumen pembayaran ====== -->
+
+      <!-- Jangka Waktu Emas & Berlian ==== -->
+      <input
+        type="checkbox"
+        class="styled"
+        id="jangka_waktu_emas"
+        checked="true"
+      />
+      <input
+        type="checkbox"
+        class="styled"
+        id="jangka_waktu_elektronik"
+        checked="true"
+      />
+      <input
+        type="checkbox"
+        class="styled"
+        id="jangka_waktu_hp"
+        checked="true"
+      />
+
+      <input
+        type="checkbox"
+        class="styled"
+        id="jangka_waktu_kendaraan"
+        checked="true"
+      />
+
+      <input
+        type="checkbox"
+        class="styled"
+        id="jangka_waktu_properties"
+        checked="true"
+      />
+
+      <input
+        type="checkbox"
+        class="styled"
+        id="jangka_waktu_arloji"
+        checked="true"
+      />
+      <!-- Jangka Waktu Emas & Berlian ==== -->
+
+      <!-- Pengembalian uang ==== -->
+      <input
+        type="checkbox"
+        class="styled"
+        id="pengembalian_uang_sendiri"
+        checked="true"
+      />
+
+      <input
+        type="checkbox"
+        class="styled"
+        id="pengembalian_uang_bank"
+        checked="true"
+      />
+      <!-- Pengembalian uang ==== -->
+
+      <!-- Nomor HP ===-->
+      <p id="nomor_hp" class="styled">08137600098</p>
+
+      <!-- Email ===-->
+      <p id="email" class="styled">dakocan@mail.com</p>
+
+      <!-- Nama Ibu Kandung -->
+      <p id="nama_ibu_kandung" class="styled">Marnah</p>
+
+      <!-- Nama Lengkap Kerabat -->
+      <p id="nama_lengkap_kerabat" class="styled">Budi Prakoso Wijaya</p>
+
+      <!-- Alamat Lengkap Kerabat -->
+      <p id="alamat_lengkap_kerabat" class="styled">
+        Jalan Bogasari Rt 1/7 Cipayung - Cuputat
+      </p>
+
+      <!-- No HP Kerabat -->
+      <p id="no_hp_kerabat" class="styled">08123412123</p>
+
+      <!--  tanggal marker -->
+      <p id="marker_tanggal" class="styled">26 November 2023</p>
+
+      <!--  marker nama -->
+      <p id="marker_nama" class="styled">Tri Ikhsan Iskandar</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,240 @@
+ 
+ 
+ /* Style checkbox */
+ input[type="checkbox"] {
+    /* Hide default checkbox */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Create custom checkbox */
+    width: 15px;
+    height: 15px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+  }
+
+  /* Style checked state */
+  input[type="checkbox"]:checked::before {
+    content: "\2714"; /* Unicode checkmark */
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black; /* Change checkmark color */
+    font-size: 8px;
+  }
+
+  .styled {
+    font-size: 16px;
+    letter-spacing: 1.3px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    opacity: 1;
+    font-weight: 600;
+  }
+  #nomor_cif {
+    position: absolute;
+    left: 232px;
+    top: 135px;
+  }
+
+  #identitas_yang_dipakai_ktp {
+    position: absolute;
+    left: 242px;
+    top: 173px;
+  }
+
+  #identitas_yang_dipakai_passpor {
+    position: absolute;
+    left: 295px;
+    top: 173px;
+  }
+
+  #identitas_yang_dipakai_sim {
+    position: absolute;
+    left: 369px;
+    top: 174px;
+  }
+
+  #nomor_identitas {
+    position: absolute;
+    left: 232px;
+    top: 181px;
+    /* z-index: 100; */
+  }
+
+  #nama_lengkap {
+    position: absolute;
+    left: 232px;
+    top: 209px;
+  }
+
+  #alamat {
+    position: absolute;
+    left: 232px;
+    top: 230px;
+  }
+
+  #asal_barang_hasil_usaha {
+    position: absolute;
+    left: 242px;
+    top: 270px;
+  }
+
+  #asal_barang_hasil_investasi {
+    position: absolute;
+    left: 346px;
+    top: 270px;
+  }
+
+  #asal_barang_hasil_warisan {
+    position: absolute;
+    left: 452px;
+    top: 270px;
+  }
+
+  #asal_barang_hasil_hibah {
+    position: absolute;
+    left: 525px;
+    top: 270px;
+  }
+
+  #asal_barang_hasil_lain {
+    position: absolute;
+    left: 590px;
+    top: 270px;
+  }
+
+  #status_transaksi_sendiri {
+    position: absolute;
+    left: 242px;
+    top: 295px;
+  }
+  #status_transaksi_orang_lain {
+    position: absolute;
+    left: 366px;
+    top: 295px;
+  }
+
+  #tujuan_transaksi_pembelian {
+    position: absolute;
+    left: 242px;
+    top: 318px;
+  }
+
+  #tujuan_transaksi_modal {
+    position: absolute;
+    left: 407px;
+    top: 318px;
+  }
+  #tujuan_transaksi_pendidikan {
+    position: absolute;
+    left: 514px;
+    top: 318px;
+  }
+  #tujuan_transaksi_lain {
+    position: absolute;
+    left: 636px;
+    top: 318px;
+  }
+  #instrumen_pembayaran_tunai {
+    position: absolute;
+    left: 242px;
+    top: 343px;
+  }
+  #instrumen_pembayaran_bank {
+    position: absolute;
+    left: 297px;
+    top: 343px;
+  }
+
+  #jangka_waktu_emas {
+    position: absolute;
+    left: 333px;
+    top: 366px;
+  }
+  #jangka_waktu_elektronik {
+    position: absolute;
+    left: 477px;
+    top: 366px;
+  }
+  #jangka_waktu_hp {
+    position: absolute;
+    left: 628px;
+    top: 366px;
+  }
+  #jangka_waktu_kendaraan {
+    position: absolute;
+    left: 311px;
+    top: 390px;
+  }
+
+  #jangka_waktu_properties {
+    position: absolute;
+    left: 456px;
+    top: 390px;
+  }
+  #jangka_waktu_arloji {
+    position: absolute;
+    left: 570px;
+    top: 390px;
+  }
+  #pengembalian_uang_sendiri {
+    position: absolute;
+    left: 242px;
+    top: 414px;
+  }
+  #pengembalian_uang_bank {
+    position: absolute;
+    left: 351px;
+    top: 414px;
+  }
+
+  #nomor_hp {
+    position: absolute;
+    left: 235px;
+    top: 423px;
+  }
+
+  #email {
+    position: absolute;
+    left: 235px;
+    top: 445px;
+  }
+
+  #nama_ibu_kandung {
+    position: absolute;
+    left: 235px;
+    top: 470px;
+  }
+  #nama_lengkap_kerabat {
+    position: absolute;
+    left: 234px;
+    top: 516px;
+  }
+  #alamat_lengkap_kerabat {
+    position: absolute;
+    left: 234px;
+    top: 541px;
+  }
+  #no_hp_kerabat {
+    position: absolute;
+    left: 234px;
+    top: 566px;
+  }
+
+  #marker_tanggal {
+    position: absolute;
+    bottom: 165px;
+    left: 598px;
+    font-size: 13px;
+  }
+
+  #marker_nama {
+    position: absolute;
+    bottom: 72px;
+    left: 555px;
+    font-size: 13px;
+  }
