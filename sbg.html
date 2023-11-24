@@ -53,7 +53,7 @@
         font-family: Arial, Helvetica, sans-serif;
         color: #000;
         opacity: 1;
-        background: yellow;
+        /* background: yellow; */
         font-weight: 600;
       }
 
@@ -91,9 +91,9 @@
         top: 57px;
       }
 
-      #deskripsi_barang_jaminan{
+      #deskripsi_barang_jaminan {
         position: absolute;
-        left: 23px;
+        left: 21px;
         top: 120px;
         max-width: 400px;
         height: 280px;
@@ -104,27 +104,234 @@
       #qr_code {
         position: absolute;
         left: 689px;
-        top: 354px; 
+        top: 354px;
       }
 
-      #no_bukti_surat_garai{
+      #no_bukti_surat_gadai_1 {
         position: absolute;
-        left: 470px;
-        top: 119px; 
+        left: 471px;
+        top: 119px;
       }
 
-     
-    </style>
+      #sewa_modal_per_minggu {
+        position: absolute;
+        left: 671px;
+        top: 120px;
+      }
 
+      #tanggal_transaksi_pinjaman_1 {
+        position: absolute;
+        left: 471px;
+        top: 207px;
+      }
+
+      #jangka_waktu_pinjaman {
+        position: absolute;
+        left: 631px;
+        top: 209px;
+      }
+
+      #tanggal_jatuh_tempo_1 {
+        position: absolute;
+        left: 461px;
+        top: 292px;
+      }
+
+      #golongan_1 {
+        position: absolute;
+        left: 689px;
+        top: 291px;
+      }
+
+      #uang_pinjaman_1 {
+        position: absolute;
+        left: 471px;
+        top: 375px;
+      }
+
+      /* DATA NASABAH STYLE */
+      #no_cif {
+        position: absolute;
+        left: 181px;
+        top: 460px;
+      }
+
+      #nama_lengkap {
+        position: absolute;
+        left: 181px;
+        top: 492px;
+      }
+
+      #kewarganegaraan {
+        position: absolute;
+        left: 181px;
+        top: 526px;
+      }
+
+      #no_ktp_sim_paspor{
+        position: absolute;
+        left: 181px;
+        top: 561px;
+      }
+
+      #alamat_lengkap {
+        max-width: 350px;
+        position: absolute;
+        left: 182px;
+        top: 610px;
+      }
+
+      #no_telpon_hp {
+        position: absolute;
+        left: 181px;
+        top: 653px;
+      }
+
+      #email {
+        position: absolute;
+        left: 181px;
+        top: 686px;
+      }
+
+      /* BUKTI BAYAR STYLE */
+      #uang_pinjaman_2 {
+        position: absolute;
+        left: 181px;
+        top: 787px;
+      }
+
+      #administrasi {
+        position: absolute;
+        left: 211px;
+        top: 819px;
+      }
+
+      #jumlah_yang_diberikan_kepada_nasabah {
+        position: absolute;
+        left: 181px;
+        top: 853px;
+      }
+
+      /* TANDA TANGAN STYLE */
+      #pemberi_kuasa {
+        max-width: 90px;
+        font-size: 7px;
+        position: absolute;
+        left: 592px;
+        top: 640px;
+      }
+
+      #penerima_kuasa {
+        max-width: 90px;
+        font-size: 7.5px;
+        position: absolute;
+        left: 695px;
+        top: 640px;
+      }
+
+      #pimpinan_cabang {
+        max-width: 150px;
+        font-size: 12px;
+        position: absolute;
+        left: 636px;
+        top: 768px;
+      }
+
+      #nasabah {
+        max-width: 150px;
+        font-size: 12px;
+        position: absolute;
+        left: 629px;
+        top: 891px;
+      }
+
+      #kantor_cabang {
+        position: absolute;
+        left: 545px;
+        top: 37px;
+      }
+
+      /* UNDER CUT SIGN STYLE */
+      #no_bukti_surat_gadai_2 {
+        position: absolute;
+        font-size: 13px;
+        left: 516px;
+        top: 950px;
+      }
+
+      #golongan_2 {
+        position: absolute;
+        font-size: 13px;
+        left: 702px;
+        top: 950px;
+      }
+
+      #nilai_taksiran {
+        position: absolute;
+        font-size: 13px;
+        left: 526px;
+        top: 1005px;
+      }
+      
+      #uang_pinjaman_3 {
+        position: absolute;
+        font-size: 13px;
+        left: 670px;
+        top: 1005px;
+      }
+
+      #tanggal_transaksi_pinjaman_2 {
+        position: absolute;
+        font-size: 11px;
+        left: 515px;
+        top: 1053px;
+      }
+
+      #tanggal_jatuh_tempo_2 {
+        position: absolute;
+        font-size: 11px;
+        left: 665px;
+        top: 1053px;
+      }
+
+      #stl_ltv {
+        position: absolute;
+        font-size: 10px;
+        left: 564px;
+        top: 1078px;
+      }
+
+      #hps_ltv {
+        position: absolute;
+        font-size: 10px;
+        left: 557px;
+        top: 1093px;
+      }
+
+
+      /* PAGE BELAKANG */
+      #nasabah_2 {
+        position: absolute;
+        font-size: 12px;
+        left: 320px;
+        top: 850px;
+      }
+
+      #pimpinan_cabang_2 {
+        position: absolute;
+        font-size: 12px;
+        left: 610px;
+        top: 850px;
+      }
+
+    </style>
   </head>
 
   <body style="--bleeding: 0.5cm; --margin: 1cm">
     <!-- page depan -->
     <div class="page page-depan">
-      
       <p id="kantor_cabang" class="styled">Plaza Indonesia</p>
       <p id="no_hp_kantor_cabang" class="styled">(021) 51455664</p>
-
       <p id="deskripsi_barang_jaminan" class="styled">
         nventore veritatis et quasi architecto beatae vitae dicta sunt
         explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
@@ -135,20 +342,74 @@
         voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
         corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
       </p>
-
-      <p id="no_bukti_surat_garai" class="styled">01200200809</p>
-
-      <div id="qr_code" class="styled">
-        <svg width="70px" height="70px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3,11H5v2H3V11m8-6h2V9H11V5M9,11h4v4H11V13H9V11m6,0h2v2h2V11h2v2H19v2h2v4H19v2H17V19H13v2H11V17h4V15h2V13H15V11m4,8V15H17v4h2M15,3h6V9H15V3m2,2V7h2V5H17M3,3H9V9H3V3M5,5V7H7V5H5M3,15H9v6H3V15m2,2v2H7V17Z"></path> <rect width="24" height="24" fill="none"></rect> </g></svg>
-      </div>
-    </div>
-
-
-    <!-- page belakang atau page ke2-->
-    <div class="page page-belakang">
-      <p id="nasabah" class="styled">budiono</p>
+      <p id="no_bukti_surat_gadai_1" class="styled">01200200809</p>
+      <p id="sewa_modal_per_minggu" class="styled">250.000</p>
+      <p id="tanggal_transaksi_pinjaman_1" class="styled">25 September</p>
+      <p id="jangka_waktu_pinjaman" class="styled">15 January 2024</p>
+      <p id="tanggal_jatuh_tempo_1" class="styled">15 January 2024</p>
+      <p id="golongan_1" class="styled">DK</p>
+      <p id="uang_pinjaman_1" class="styled">Uang Pinjaman</p>
       
+      <!-- QR CODE -->
+      <div id="qr_code" class="styled">
+        <svg
+          width="70px"
+          height="70px"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#000000"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M3,11H5v2H3V11m8-6h2V9H11V5M9,11h4v4H11V13H9V11m6,0h2v2h2V11h2v2H19v2h2v4H19v2H17V19H13v2H11V17h4V15h2V13H15V11m4,8V15H17v4h2M15,3h6V9H15V3m2,2V7h2V5H17M3,3H9V9H3V3M5,5V7H7V5H5M3,15H9v6H3V15m2,2v2H7V17Z"
+            ></path>
+            <rect width="24" height="24" fill="none"></rect>
+          </g>
+        </svg>
+      </div>
+
+      <!-- DATA NASABAH  -->
+      <p id="no_cif" class="styled">12200080</p>
+      <p id="nama_lengkap" class="styled">Haryawan Sukamto</p>
+      <p id="kewarganegaraan" class="styled">Indonesia</p>
+      <p id="no_ktp_sim_paspor" class="styled">31740341157700004</p>
+      <div id="alamat_lengkap" class="styled">Jl Setiabudi Timur RT 003/12 Setiabudi Jakarta Selatan</div>
+      <p id="no_telpon_hp" class="styled">0813765887623</p>
+      <p id="email" class="styled">hary@gmail.com</p>
+
+      <!-- BUKTI BAYAR -->
+      <p id="uang_pinjaman_2" class="styled">200.000.000</p>
+      <p id="administrasi" class="styled">250.000</p>
+      <p id="jumlah_yang_diberikan_kepada_nasabah" class="styled">199.750.000</p>
+
+      <!-- TANDA TANGAN -->
+      <div id="pemberi_kuasa" class="styled">Haryawan Sukamto</div>
+      <div id="penerima_kuasa" class="styled">Wawan R Safarista</div>
+      <div id="pimpinan_cabang" class="styled">Wawan R Safarista</div>
+      <div id="nasabah" class="styled">Haryawan Sukamto</div>
+
+      <!-- UNDER CUT SIGN -->
+      <p id="no_bukti_surat_gadai_2" class="styled">010123100195</p>
+      <p id="golongan_2" class="styled">DK</p>
+      <p id="nilai_taksiran" class="styled">305.000.000</p>
+      <p id="uang_pinjaman_3" class="styled">200.000.000</p>
+      <p id="tanggal_transaksi_pinjaman_2" class="styled">25 September 2023</p>
+      <p id="tanggal_jatuh_tempo_2" class="styled">15 January 2024</p>
+      <p id="stl_ltv" class="styled">STL : 930.000 / LTV : 95 %</p>
+      <p id="hps_ltv" class="styled">HPS : 5.000.000 / LTV : 70 %</p>
     </div>
 
+
+    <!--  PAGE BELAKANG-->
+    <div class="page page-belakang">
+      <p id="nasabah_2" class="styled">Haryawan Sukamto</p>
+      <p id="pimpinan_cabang_2" class="styled">Wawan R Safarista</p>
+    </div>
   </body>
 </html>
